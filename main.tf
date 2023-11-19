@@ -1,5 +1,5 @@
 resource "aws_sns_topic" "demo" {
-  name = var.toic_name
+  name = var.topic_name
   tags = {
     Team = var.Team
   }

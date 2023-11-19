@@ -7,7 +7,7 @@ variable "profile" {
   default = "default"
 }
 
-variable "toic_name" {
+variable "topic_name" {
   default = "sns-dev"
 }
 
