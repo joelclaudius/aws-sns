@@ -1,14 +1,11 @@
-
-
-
 resource "aws_sns_topic" "demo" {
-  name = "sns-dev"
+  name = var.toic_name
   tags = {
-    Team = "DevOps"
+    Team = var.Team
   }
 }
 resource "aws_sns_topic_subscription" "email-target" {
   topic_arn = aws_sns_topic.demo.arn
-  protocol  = "email"
-  endpoint  = "otiiclaudius@gmail.com"
+  protocol  = var.protocol_type
+  endpoint  = var.endpoint
 }

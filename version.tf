@@ -8,6 +8,6 @@ terraform{
 }
 
 provider "aws" {
-  region  = "us-east-1"
-  profile = "default"
+  region  = var.my_region
+  profile = var.profile
 }
